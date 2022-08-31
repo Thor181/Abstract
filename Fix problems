@@ -1,1 +1,2 @@
 ssl certificate problem unable to get local issuer certificat : git config --global http.sslbackend schannel
+DBeaver: драйвер не настроен для аутентификации по Windows auth : поместить mssql-jdbc_auth-9.2.1.x64.dll файл в DBeaver\jre\bin

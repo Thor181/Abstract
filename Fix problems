@@ -3,3 +3,4 @@ DBeaver: драйвер не настроен для аутентификаци�
 Цепочка сертификатов выпущена центром сертификации, не имеющим доверия : прописать в строку подключения TrustServerCetificate=true
 
 Скомпилировать один файл: dotnet publish -c Release -o publish -p:PublishReadyToRun=true -p:PublishSingleFile=true  --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true -r win-x64  
+Context menu item binding to viewModel: https://stackoverflow.com/questions/3583507/wpf-binding-a-contextmenu-to-an-mvvm-command

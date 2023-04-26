@@ -1,4 +1,5 @@
-ssl certificate problem unable to get local issuer certificat : git config --global http.sslbackend schannel
+#
+
 DBeaver: драйвер не настроен для аутентификации по Windows auth : поместить mssql-jdbc_auth-9.2.1.x64.dll файл в DBeaver\jre\bin
 Цепочка сертификатов выпущена центром сертификации, не имеющим доверия : прописать в строку подключения TrustServerCetificate=true
 
@@ -18,3 +19,7 @@ ASP.NET 403 forbidden when deploy : Just add the following to your web config: <
 	sslVerify = false
 [credential]
 	helper = wincred
+	
+## ssl certificate problem unable to get local issuer certificat
+Выполнить в cmd: git config --global http.sslbackend schannel
+	

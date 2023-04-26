@@ -5,13 +5,13 @@
 Прописать в строку подключения TrustServerCetificate=true
 
 # .NET
-## Скомпилировать один файл
+	## Скомпилировать один файл
 dotnet publish -c Release -o publish -p:PublishReadyToRun=true -p:PublishSingleFile=true  --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true -r win-x64  
 
-## WPF
+	## WPF
 Context menu item binding to viewModel: https://stackoverflow.com/questions/3583507/wpf-binding-a-contextmenu-to-an-mvvm-command
 
-## ASP.NET 
+	## ASP.NET 
 ### Не работает IntelliSense для jQuery
 Добавить файл _references.js, в него поместить строку - ///<reference path="../lib/jquery/dist/jquery.js" /> - держать файл открытым.
 

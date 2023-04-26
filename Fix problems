@@ -9,3 +9,12 @@ Context menu item binding to viewModel: https://stackoverflow.com/questions/3583
 
 ASP.NET 403 forbidden when deploy : Just add the following to your web config: <system.webServer> 
                                                                                    <modules runAllManagedModulesForAllRequests="true" /> 
+                                                                                   
+# Git behind proxy
+Добавить в .gitconfig
+
+[http]
+	proxy = https://rosneft\\TorgashinAA:password@knipi-proxy.rosneft.ru:8080
+	sslVerify = false
+[credential]
+	helper = wincred

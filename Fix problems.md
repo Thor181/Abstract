@@ -7,6 +7,7 @@
 
 # .NET
 ## Скомпилировать один файл
+### Через CMD
 	dotnet publish -c Release -o publish -p:PublishReadyToRun=true -p:PublishSingleFile=true  --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true -r win-x64  
 	
 ### Добавить в .csproj

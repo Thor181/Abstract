@@ -10,9 +10,9 @@
 	
 ### Добавить в .csproj
 	<PublishSingleFile>true</PublishSingleFile>
-	><SelfContained>true</SelfContained>
-	><RuntimeIdentifier>win-x64</RuntimeIdentifier>
-	><IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	<SelfContained>true</SelfContained>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 ## WPF
 	Context menu item binding to viewModel: https://stackoverflow.com/questions/3583507/wpf-binding-a-contextmenu-to-an-mvvm-command
 

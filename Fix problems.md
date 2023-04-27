@@ -9,10 +9,10 @@
 	dotnet publish -c Release -o publish -p:PublishReadyToRun=true -p:PublishSingleFile=true  --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true -r win-x64  
 	
 Добавить в .csproj
-	"<PublishSingleFile>true</PublishSingleFile>"
-	\<SelfContained>true</SelfContained>
-	\<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-	\<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	**<PublishSingleFile>true</PublishSingleFile>**
+	**<SelfContained>true</SelfContained>**
+	**<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	\<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>**
 ## WPF
 	Context menu item binding to viewModel: https://stackoverflow.com/questions/3583507/wpf-binding-a-contextmenu-to-an-mvvm-command
 

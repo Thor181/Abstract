@@ -8,8 +8,8 @@
 ## Скомпилировать один файл
 	dotnet publish -c Release -o publish -p:PublishReadyToRun=true -p:PublishSingleFile=true  --self-contained true -p:IncludeNativeLibrariesForSelfExtract=true -r win-x64  
 	
-Добавить в .csproj
-	\<PublishSingleFile\>true\</PublishSingleFile\>
+### Добавить в .csproj
+	<PublishSingleFile>true</PublishSingleFile>
 	><SelfContained>true</SelfContained>
 	><RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	><IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>

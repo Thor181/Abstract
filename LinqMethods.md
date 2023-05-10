@@ -40,7 +40,7 @@
 # Отложенное и немедленное выполнение
 
 Методы для отложенного выполнение
-  > AsEnumerable
+  `AsEnumerable
   Cast
   Concat
   DefaultIfEmpty
@@ -65,4 +65,4 @@
   ThenBy
   ThenByDescending
   Union
-  Where
+  Where`

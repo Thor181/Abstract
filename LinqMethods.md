@@ -40,32 +40,57 @@
 # Отложенное и немедленное выполнение
 
 Методы для отложенного выполнения
-  > AsEnumerable;
-  > Cast;
-  > Concat;
-  > DefaultIfEmpty;
-  > Distinct;
-  > Except;
-  > GroupBy;
-  > GroupJoin;
-  > Intersect;
-  > Join;
-  > OfType;
-  > OrderBy;
-  > OrderByDescending;
-  > Range;
-  > Repeat;
-  > Reverse;
-  > Select;
-  > SelectMany;
-  > Skip;
-  > SkipWhile;
-  > Take;
-  > TakeWhile;
-  > ThenBy;
-  > ThenByDescending;
-  > Union;
-  > Where;
+> AsEnumerable;
+
+> Cast;
+
+> Concat;
+
+> DefaultIfEmpty;
+
+> Distinct;
+
+> Except;
+
+> GroupBy;
+
+> GroupJoin;
+
+> Intersect;
+
+> Join;
+
+> OfType;
+
+> OrderBy;
+
+> OrderByDescending;
+
+> Range;
+
+> Repeat;
+
+> Reverse;
+
+> Select;
+
+> SelectMany;
+
+> Skip;
+
+> SkipWhile;
+
+> Take;
+
+> TakeWhile;
+
+> ThenBy;
+
+> ThenByDescending;
+
+> Union;
+
+> Where;
 
 Методы для немедленного выполнения
 > Aggregate

@@ -36,3 +36,33 @@ ToLookup: группирует элементы по ключу, при этом
 Union: объединяет две однородные коллекции
 Where: определяет фильтр выборки
 Zip: объединяет две коллекции в соответствии с определенным условием
+
+# Отложенное и немедленное выполнение
+
+Методы для отложенного выполнение
+  AsEnumerable
+  Cast
+  Concat
+  DefaultIfEmpty
+  Distinct
+  Except
+  GroupBy
+  GroupJoin
+  Intersect
+  Join
+  OfType
+  OrderBy
+  OrderByDescending
+  Range
+  Repeat
+  Reverse
+  Select
+  SelectMany
+  Skip
+  SkipWhile
+  Take
+  TakeWhile
+  ThenBy
+  ThenByDescending
+  Union
+  Where

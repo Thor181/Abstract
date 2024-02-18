@@ -15,3 +15,17 @@ private void PlainChange(int[] arr)
         arr[i] = -1;
     }
 }
+
+public void Span()
+{
+    var a = new int[10];
+    SpanChange(a.AsSpan(0, 3));
+}
+
+private void SpanChange(Span<int> span)
+{
+    for (int i = 0; i < span.Length; i++)
+    {
+        span[i] = -1;
+    }
+}

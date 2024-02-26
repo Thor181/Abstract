@@ -4,7 +4,7 @@ public class MyClass
 }
 
 var field = typeof(MyClass).GetField("<MyNumber>k__BackingField", BindingFlags.Instance | BindingFlags.NonPublic);
-field.SetValue(anIstanceOfMyClass, 3);
+field.SetValue(anIstanceOfMyClass, 3); 
 
 --------
 

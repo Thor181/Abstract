@@ -1,3 +1,9 @@
+
+| Method | Count |       Mean |    Error |   StdDev |   Gen0 | Allocated |
+|------- |------ |-----------:|---------:|---------:|-------:|----------:|
+| Struct |  1000 |   247.9 ns |  4.24 ns |  3.96 ns |      - |         - |
+|  Class |  1000 | 1,850.3 ns | 35.90 ns | 33.58 ns | 2.5520 |   24024 B |
+
 ```csharp
 [MemoryDiagnoser]
 public class Test
@@ -49,7 +55,3 @@ public class Test
 }
 ```
 
-| Method | Count |       Mean |    Error |   StdDev |   Gen0 | Allocated |
-|------- |------ |-----------:|---------:|---------:|-------:|----------:|
-| Struct |  1000 |   247.9 ns |  4.24 ns |  3.96 ns |      - |         - |
-|  Class |  1000 | 1,850.3 ns | 35.90 ns | 33.58 ns | 2.5520 |   24024 B |

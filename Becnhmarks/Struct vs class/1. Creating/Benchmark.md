@@ -1,8 +1,8 @@
 
-| Method | Count |       Mean |    Error |   StdDev |   Gen0 | Allocated |
-|------- |------ |-----------:|---------:|---------:|-------:|----------:|
-| Struct |  1000 |   247.9 ns |  4.24 ns |  3.96 ns |      - |         - |
-|  Class |  1000 | 1,850.3 ns | 35.90 ns | 33.58 ns | 2.5520 |   24024 B |
+| Method | Count |     Mean |    Error |   StdDev | Allocated |
+|------- |------ |---------:|---------:|---------:|----------:|
+| Struct |  1000 | 91.43 ms | 1.563 ms | 1.605 ms |      40 B |
+|  Class |  1000 | 88.26 ms | 1.130 ms | 1.057 ms |   48091 B |
 
 ```csharp
 [MemoryDiagnoser]
@@ -22,7 +22,8 @@ public class Test
         for (int i = 0; i < Count; i++)
         {
             var a = new TestStruct();
-            UseStruct(a);
+            var res = UseStruct(a);
+            Console.WriteLine(res.A);
         }
 
         return new TestStruct();
@@ -40,7 +41,8 @@ public class Test
         for (int i = 0; i < Count; i++)
         {
             var a = new TestClass();
-            UseClass(a);
+            var res = UseClass(a);
+            Console.WriteLine(res.A);
         }
 
         return new TestClass();
@@ -51,6 +53,7 @@ public class Test
         testClass.A = 1;
         return testClass;
     }
+
 
 }
 ```

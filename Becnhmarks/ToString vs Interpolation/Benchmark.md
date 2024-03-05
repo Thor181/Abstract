@@ -1,8 +1,8 @@
 BenchmarkDotNet v0.13.7, Windows 11 (10.0.22621.3155/22H2/2022Update/SunValley2)
-12th Gen Intel Core i5-12400F, 1 CPU, 12 logical and 6 physical cores
-.NET SDK 8.0.200
-  [Host]     : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2
-  DefaultJob : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2
+
+12th Gen Intel Core i5-12400F, 1 CPU, 12 logical and 6 physical cores .NET SDK 8.0.200  
+[Host]     : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2  
+DefaultJob : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2
 
 
 |        Method | Count |      Mean |     Error |    StdDev |   Gen0 | Allocated |

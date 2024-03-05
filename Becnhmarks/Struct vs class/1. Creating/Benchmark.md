@@ -1,8 +1,8 @@
 
-| Method | Count |     Mean |    Error |   StdDev | Allocated |
-|------- |------ |---------:|---------:|---------:|----------:|
-| Struct |  1000 | 91.43 ms | 1.563 ms | 1.605 ms |      40 B |
-|  Class |  1000 | 88.26 ms | 1.130 ms | 1.057 ms |   48091 B |
+| Method | Count |     Mean |    Error |   StdDev |    Gen0 | Allocated |
+|------- |------ |---------:|---------:|---------:|--------:|----------:|
+| Struct | 10000 | 52.08 us | 0.612 us | 0.542 us |       - |         - |
+|  Class | 10000 | 32.47 us | 0.644 us | 1.673 us | 50.9644 |  480000 B |
 
 ```csharp
 namespace Benchmarks

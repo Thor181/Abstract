@@ -5,56 +5,94 @@
 |  Class |  1000 | 88.26 ms | 1.130 ms | 1.057 ms |   48091 B |
 
 ```csharp
-[MemoryDiagnoser]
-public class Test
+namespace Benchmarks
 {
-    [Params(1000)]
-    public int Count { get; set; }
-
-    [GlobalSetup]
-    public void GlobalSetup()
+    internal class Program
     {
+        static void Main(string[] args)
+        {
+            var summary = BenchmarkRunner.Run<Test>();
+        }
     }
 
-    [Benchmark]
-    public TestStruct Struct()
+    [MemoryDiagnoser]
+    public class Test
     {
-        for (int i = 0; i < Count; i++)
+        [Params(10000)]
+        public int Count { get; set; }
+
+        public TestClass TCl;
+        public static TestStruct T;
+
+        [GlobalSetup]
+        public void GlobalSetup()
         {
-            var a = new TestStruct();
-            var res = UseStruct(a);
-            Console.WriteLine(res.A);
         }
 
-        return new TestStruct();
-    }
 
-    private TestStruct UseStruct(TestStruct testStruct)
-    {
-        testStruct.A = 1;
-        return testStruct;
-    }
-
-    [Benchmark]
-    public TestClass Class()
-    {
-        for (int i = 0; i < Count; i++)
+        [Benchmark]
+        public TestStruct Struct()
         {
-            var a = new TestClass();
-            var res = UseClass(a);
-            Console.WriteLine(res.A);
+            for (int i = 0; i < Count; i++)
+            {
+                var a = new TestStruct();
+                var res = UseStruct(a);
+                T = res;
+            }
+
+            return T;
         }
 
-        return new TestClass();
+        private TestStruct UseStruct(TestStruct testStruct)
+        {
+            testStruct.A = 1;
+            return testStruct;
+        }
+
+
+        [Benchmark]
+        public TestClass Class()
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                var a = new TestClass();
+                var res = UseClass(a);
+                TCl = res;
+            }
+
+            return TCl;
+        }
+
+        private TestClass UseClass(TestClass testClass)
+        {
+            testClass.A = 1;
+            return testClass;
+        }
     }
 
-    private TestClass UseClass(TestClass testClass)
+    public class TestClass
     {
-        testClass.A = 1;
-        return testClass;
+        public int A { get; set; }
+        public int A2 { get; set; }
+        public int A3 { get; set; }
+        public int A4 { get; set; }
+        public int A5 { get; set; }
+        public int A6 { get; set; }
+        public int A7 { get; set; }
+        public int A8 { get; set; }
     }
 
-
+    public struct TestStruct
+    {
+        public int A { get; set; }
+        public int A2 { get; set; }
+        public int A3 { get; set; }
+        public int A4 { get; set; }
+        public int A5 { get; set; }
+        public int A6 { get; set; }
+        public int A7 { get; set; }
+        public int A8 { get; set; }
+    }
 }
 ```
 

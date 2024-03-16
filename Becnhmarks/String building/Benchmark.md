@@ -1,9 +1,9 @@
-BenchmarkDotNet v0.13.7, Windows 11 (10.0.22631.3296)
-12th Gen Intel Core i5-12400F, 1 CPU, 12 logical and 6 physical cores
-.NET SDK 8.0.200
-  [Host]   : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2
-  .NET 6.0 : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2
-  .NET 8.0 : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2
+BenchmarkDotNet v0.13.7, Windows 11 (10.0.22631.3296)  
+12th Gen Intel Core i5-12400F, 1 CPU, 12 logical and 6 physical cores  
+.NET SDK 8.0.200  
+  [Host]   : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2  
+  .NET 6.0 : .NET 6.0.27 (6.0.2724.6912), X64 RyuJIT AVX2  
+  .NET 8.0 : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2  
 
 
 |       Method |      Job |  Runtime | Count |     Mean |   Error |   StdDev |   Median |    Gen0 | Allocated |

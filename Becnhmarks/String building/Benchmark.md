@@ -17,6 +17,7 @@ BenchmarkDotNet v0.13.7, Windows 11 (10.0.22631.3296)
 | StringFormat | .NET 8.0 | .NET 8.0 | 10000 | 362.4 us | 7.18 us | 10.97 us | 362.7 us | 83.0078 | 764.06 KB |
 | StringConcat | .NET 8.0 | .NET 8.0 | 10000 | 105.2 us | 2.05 us |  2.81 us | 103.5 us | 83.1299 | 764.06 KB |
 
+```csharp
 [SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net60)]
 [SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
 [MemoryDiagnoser]
@@ -75,3 +76,4 @@ public class Test
 
 
 }
+```
